@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - LVup
   layers:
   - Default
   - TransparentFX
@@ -41,10 +42,10 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Layer1
+  - name: Layer 1
     uniqueID: 2425651459
     locked: 0
-  - name: Layer2
+  - name: Layer 2
     uniqueID: 4250941897
     locked: 0
   - name: Layer 3
