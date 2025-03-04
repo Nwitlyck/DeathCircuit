@@ -32,9 +32,9 @@ public class ObjectManager : MonoBehaviour
         if (count == 0)
         {
             //MUESTRE EL TEXTO DE NIVEL SUPERADO
-            levelCleared.gameObject.SetActive(true);
+            //levelCleared.gameObject.SetActive(true);
             //CAMBIA DE NIVEL EN UN TIEMPO DE DOS SEGUNDOS
-            Invoke("ChangeScene", 2);
+            //Invoke("ChangeScene", 2);
 
         }
     }
