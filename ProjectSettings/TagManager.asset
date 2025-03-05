@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - LVup
+  - Interact
+  - Jar
   layers:
   - Default
   - TransparentFX
@@ -50,4 +52,7 @@ TagManager:
     locked: 0
   - name: Layer 3
     uniqueID: 4189426099
+    locked: 0
+  - name: Layer 4
+    uniqueID: 3147038691
     locked: 0
