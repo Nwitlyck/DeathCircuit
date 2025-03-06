@@ -14,6 +14,10 @@ public class Consumibles : MonoBehaviour
             gameObject.transform.GetChild(0).gameObject.SetActive(true);
 
             Destroy(gameObject, 0.5f);
+
+            PlayerPrefs.SetInt("Consumibles", PlayerPrefs.GetInt("Consumibles") + 1);
+            PlayerPrefs.Save();
+            Debug.Log("Consumibles_OnTriggerEnter2D_Consumibles: " + PlayerPrefs.GetInt("Consumibles"));
         }
     }
 }
