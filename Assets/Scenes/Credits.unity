@@ -132,6 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 359606793}
+  - component: {fileID: 359606794}
   m_Layer: 5
   m_Name: TexCredits
   m_TagString: Untagged
@@ -158,9 +159,30 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -300}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &359606794
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 359606792}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2380051fd6e8a7f4a8ea22f2d32da481, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &973654929
 GameObject:
   m_ObjectHideFlags: 0
@@ -219,8 +241,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Death \n\nProject Manager\n\nAssets\n\n\n\n\n\n\nProgrammers\n\n\n\n\n\nWorld
-    1\n\nWorld 2\n\nWorld 3\n\nMenu\n\nThanks to"
+  m_text: "Death \n\nProject Manager\n\nAssets\n\n\n\n\n\nProgrammers\n\n\n\n\nWorld
+    1\n\nWorld 2\n\nWorld 3\n\nMenu\n\nThanks for"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -309,6 +331,7 @@ GameObject:
   - component: {fileID: 1033503228}
   - component: {fileID: 1033503227}
   - component: {fileID: 1033503226}
+  - component: {fileID: 1033503230}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -400,6 +423,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1033503230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1033503225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0da31b34939deaf4bb81c0744af7b999, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1713233736
 GameObject:
   m_ObjectHideFlags: 0
@@ -640,7 +675,7 @@ GameObject:
   - component: {fileID: 2105124549}
   - component: {fileID: 2105124548}
   m_Layer: 5
-  m_Name: Who (1)
+  m_Name: Who
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -686,8 +721,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Death \n\nProject Manager\n\nAssets\n\n\n\n\n\n\nProgrammers\n\n\n\n\n\nWorld
-    1\n\nWorld 2\n\nWorld 3\n\nMenu\n\nThanks to"
+  m_text: " Circuit \n\n Alberto Segura\n\n Cainos\t\t|cainos.itch.io\n Goldmetal\t\t|goldmetal.co.kr\n
+    karsiori\t\t|artstation.com/karsiori\n Fox Games\t|foxgamesstudio.itch.io\n alekksall\n\n
+    Alberto Segura\n Sebastian Velazquez\n Dylan Omar\n Luis Villalta\n\n Dylan Omar\n\n
+    Luis Villalta\n\n Sebastian Velazquez\n\n Alberto Segura\n\n playing our game"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -721,7 +758,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 4
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -750,7 +787,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: -532.5902}
+  m_margin: {x: 0, y: 0, z: -548.70154, w: -532.5902}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
