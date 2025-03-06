@@ -450,6 +450,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1001583011}
     m_Modifications:
+    - target: {fileID: 760255349, guid: 3e9e7855a54cceb499d7563bebfa999a, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5526973569930569443, guid: 3e9e7855a54cceb499d7563bebfa999a,
         type: 3}
       propertyPath: m_RootOrder
@@ -509,6 +513,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GEM 2 - LIGHT GREEN
+      objectReference: {fileID: 0}
+    - target: {fileID: 5526973569930569446, guid: 3e9e7855a54cceb499d7563bebfa999a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e9e7855a54cceb499d7563bebfa999a, type: 3}
@@ -1009,6 +1018,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1001583011}
     m_Modifications:
+    - target: {fileID: 3808273364781227105, guid: e8f6be19ca711994e9c7965b7cd3ce4f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7397637959737898240, guid: e8f6be19ca711994e9c7965b7cd3ce4f,
         type: 3}
       propertyPath: m_RootOrder
@@ -1068,6 +1082,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GEM 3 - LILAC
+      objectReference: {fileID: 0}
+    - target: {fileID: 7397637959737898243, guid: e8f6be19ca711994e9c7965b7cd3ce4f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8f6be19ca711994e9c7965b7cd3ce4f, type: 3}
@@ -2022,6 +2041,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1001583011}
     m_Modifications:
+    - target: {fileID: 760255349, guid: 3e9e7855a54cceb499d7563bebfa999a, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5526973569930569443, guid: 3e9e7855a54cceb499d7563bebfa999a,
         type: 3}
       propertyPath: m_RootOrder
@@ -2081,6 +2104,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GEM 2 - LIGHT GREEN (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5526973569930569446, guid: 3e9e7855a54cceb499d7563bebfa999a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e9e7855a54cceb499d7563bebfa999a, type: 3}
@@ -2472,10 +2500,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1001583011}
     m_Modifications:
+    - target: {fileID: 2985201864446173216, guid: 6dafbd0b161b7c847836d47881da4b5b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4224423018122026976, guid: 6dafbd0b161b7c847836d47881da4b5b,
         type: 3}
       propertyPath: m_Name
       value: GEM 9 - LIGHT GREEN
+      objectReference: {fileID: 0}
+    - target: {fileID: 4224423018122026976, guid: 6dafbd0b161b7c847836d47881da4b5b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4224423018122026979, guid: 6dafbd0b161b7c847836d47881da4b5b,
         type: 3}
@@ -63217,6 +63255,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1001583011}
     m_Modifications:
+    - target: {fileID: 5926508465644814908, guid: fdf907a2b2312914d83fad00e8c020d8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6337183792273155910, guid: fdf907a2b2312914d83fad00e8c020d8,
         type: 3}
       propertyPath: m_RootOrder
@@ -63276,6 +63319,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GEM 4 - RED (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337183792273155961, guid: fdf907a2b2312914d83fad00e8c020d8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdf907a2b2312914d83fad00e8c020d8, type: 3}
@@ -64167,6 +64215,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1001583011}
     m_Modifications:
+    - target: {fileID: 364486658982993297, guid: 306d6ba0d877a3045902228a80158033,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1678820942962449938, guid: 306d6ba0d877a3045902228a80158033,
         type: 3}
       propertyPath: m_RootOrder
@@ -64226,6 +64279,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GEM 6 - DARK BLUE
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678820942962449941, guid: 306d6ba0d877a3045902228a80158033,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 306d6ba0d877a3045902228a80158033, type: 3}
@@ -64494,6 +64552,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: GEM 5 - GOLD
       objectReference: {fileID: 0}
+    - target: {fileID: 3254849429764201407, guid: ad433640c2ae4ba408b8f386ba41b222,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3696423133780571693, guid: ad433640c2ae4ba408b8f386ba41b222,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad433640c2ae4ba408b8f386ba41b222, type: 3}
 --- !u!4 &1079031340 stripped
@@ -64659,6 +64727,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1001583011}
     m_Modifications:
+    - target: {fileID: 3808273364781227105, guid: e8f6be19ca711994e9c7965b7cd3ce4f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7397637959737898240, guid: e8f6be19ca711994e9c7965b7cd3ce4f,
         type: 3}
       propertyPath: m_RootOrder
@@ -64718,6 +64791,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GEM 3 - LILAC (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7397637959737898243, guid: e8f6be19ca711994e9c7965b7cd3ce4f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8f6be19ca711994e9c7965b7cd3ce4f, type: 3}
@@ -66020,6 +66098,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1001583011}
     m_Modifications:
+    - target: {fileID: 5926508465644814908, guid: fdf907a2b2312914d83fad00e8c020d8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6337183792273155910, guid: fdf907a2b2312914d83fad00e8c020d8,
         type: 3}
       propertyPath: m_RootOrder
@@ -66079,6 +66162,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GEM 4 - RED
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337183792273155961, guid: fdf907a2b2312914d83fad00e8c020d8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdf907a2b2312914d83fad00e8c020d8, type: 3}
@@ -120742,10 +120830,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1001583011}
     m_Modifications:
+    - target: {fileID: 99114236716665539, guid: c396710bf9a024345b101ec01fab9245,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3475106442744632521, guid: c396710bf9a024345b101ec01fab9245,
         type: 3}
       propertyPath: m_Name
       value: GEM 8 - RED
+      objectReference: {fileID: 0}
+    - target: {fileID: 3475106442744632521, guid: c396710bf9a024345b101ec01fab9245,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3475106442744632526, guid: c396710bf9a024345b101ec01fab9245,
         type: 3}
@@ -121883,10 +121981,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1001583011}
     m_Modifications:
+    - target: {fileID: 922112850773938251, guid: dfd6a78767a4316418e076ca42275b55,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1038078460814267451, guid: dfd6a78767a4316418e076ca42275b55,
         type: 3}
       propertyPath: m_Name
       value: GEM 7 - LILAC
+      objectReference: {fileID: 0}
+    - target: {fileID: 1038078460814267451, guid: dfd6a78767a4316418e076ca42275b55,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1038078460814267588, guid: dfd6a78767a4316418e076ca42275b55,
         type: 3}
