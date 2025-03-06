@@ -14,6 +14,10 @@ public class getItem : MonoBehaviour
             gameObject.transform.GetChild(0).gameObject.SetActive(true);
             player.GetComponent<gemsCount>().SetGemCount(player.GetComponent<gemsCount>().GetGemCount() + 1);
             StartCoroutine("Wait");
+
+            PlayerPrefs.SetInt("Consumibles", PlayerPrefs.GetInt("Consumibles") + 1);
+            PlayerPrefs.Save();
+            Debug.Log("Consumibles_OnTriggerEnter2D_Consumibles: " + PlayerPrefs.GetInt("Consumibles"));
         }
     }
 
