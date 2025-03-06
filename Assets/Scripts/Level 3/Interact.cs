@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Interact : MonoBehaviour
 {
+    public Text text;
     public GameObject player;
     public GameObject canvas;
     public GameObject items;
@@ -20,6 +22,7 @@ public class Interact : MonoBehaviour
         {
             inside = true;
             canvas.transform.GetChild(6).gameObject.SetActive(true);
+
         }
     }
 
@@ -74,31 +77,59 @@ public class Interact : MonoBehaviour
         }
     }
 
+    IEnumerator DialogSequence(string dialogText, float waitTime)
+    {
+        text.text = dialogText;
+        canvas.transform.GetChild(7).gameObject.SetActive(true);
+
+        yield return new WaitForSeconds(waitTime);
+
+        canvas.transform.GetChild(7).gameObject.SetActive(false);
+    }
+
     public void monsterInteract()
     {
+        float waitTime = 5f;
+        string dialogText;
+
         canvas.transform.GetChild(6).gameObject.SetActive(false);
-        if (canvas.transform.GetChild(1).gameObject.activeInHierarchy)
+        if (canvas.transform.GetChild(1).gameObject.activeSelf)
         {
+
+            dialogText = "¡Fuego! ¡No, no! ¡Sácame de aquí! ¡Huiré antes de que me quemen!";
+            StartCoroutine(DialogSequence(dialogText, waitTime));
+
+
             canvas.transform.GetChild(1).gameObject.SetActive(false);
             gameObject.GetComponent<Animator>().SetBool("run", true);
             objectsIfItNeeds[0].GetComponent<Interact>().SetFinishedQuest(true);
             StartCoroutine("Wait");
+
+
         }
         else
         {
-
+            dialogText = "¡No me voy a mover de aquí! ¡Este es mi territorio!";
+            StartCoroutine(DialogSequence(dialogText, waitTime));
         }
     }
 
     public void oldmanInteract()
     {
+        float waitTime = 5f;
+        string dialogText;
+
         canvas.transform.GetChild(6).gameObject.SetActive(false);
         if (!finishedQuest)
         {
-            
+            dialogText = "¡Por favor, necesito tu ayuda! ¡Hay un monstruo aterrador que me está atormentando! (Una antorcha quizas pueda ayudar)";
+            StartCoroutine(DialogSequence(dialogText, waitTime));
         }
         else
         {
+            dialogText = "¡Lo lograste! ¡El monstruo se ha ido! Aquí tienes esta gema como muestra de mi agradecimiento.";
+            StartCoroutine(DialogSequence(dialogText, waitTime));
+
             items.transform.GetChild(4).gameObject.SetActive(true);
             boxCollider = gameObject.GetComponent<BoxCollider2D>();
             boxCollider.enabled = !enabled;
@@ -108,40 +139,55 @@ public class Interact : MonoBehaviour
 
     public void ladyInteract()
     {
+        float waitTime = 5f;
+        string dialogText;
+
         canvas.transform.GetChild(6).gameObject.SetActive(false);
         if (objectsIfItNeeds[0].activeInHierarchy)
         {
-
+            dialogText = "¿Sabes? He visto algo muy extraño detrás de esos barriles. Deberías echar un vistazo.";
+            StartCoroutine(DialogSequence(dialogText, waitTime));
         }
         else
         {
-
+            dialogText = "¡Lo encontraste! ¡Increíble! Ahora sigue el mapa, te guiará hacia algo importante.";
+            StartCoroutine(DialogSequence(dialogText, waitTime));
         }
     }
 
     public void mrInteract()
     {
+        float waitTime = 5f;
+        string dialogText;
+
         canvas.transform.GetChild(6).gameObject.SetActive(false);
         if (!finishedQuest)
         {
-
+            dialogText = "Tengo un presentimiento... Algo está oculto aquí. Creo que tiene que ver con esos espacios en el piso y los jarrones.";
+            StartCoroutine(DialogSequence(dialogText, waitTime));
         }
         else
         {
-
+            dialogText = "¡Excelente trabajo! Sabía que había algo oculto ahí. ¡Felicidades por resolver el puzzle!";
+            StartCoroutine(DialogSequence(dialogText, waitTime));
         }
     }
 
     public void guyInteract()
     {
+        float waitTime = 5f;
+        string dialogText;
+
         canvas.transform.GetChild(6).gameObject.SetActive(false);
         if (!finishedQuest)
         {
-            
+            dialogText = "Oye, he visto una tumba bastante extraña por ahí. Deberías investigar.";
+            StartCoroutine(DialogSequence(dialogText, waitTime));
         }
         else
         {
-            
+            dialogText = "¡No puedo creerlo! ¡Encontraste una gema dentro de la tumba! ¡Eso es increíble!";
+            StartCoroutine(DialogSequence(dialogText, waitTime));
         }
     }
 
@@ -152,6 +198,7 @@ public class Interact : MonoBehaviour
         {
             if (canvas.transform.GetChild(3).gameObject.activeInHierarchy)
             {
+
                 items.transform.GetChild(13).gameObject.SetActive(true);
                 canvas.transform.GetChild(3).gameObject.SetActive(false);
                 finishedQuest = true;
