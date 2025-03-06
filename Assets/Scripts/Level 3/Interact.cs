@@ -13,6 +13,7 @@ public class Interact : MonoBehaviour
     public string actionName;
     bool inside;
 
+    private bool completed = false;
     private BoxCollider2D boxCollider;
     private bool finishedQuest = false;
 
@@ -81,37 +82,45 @@ public class Interact : MonoBehaviour
     {
         text.text = dialogText;
         canvas.transform.GetChild(7).gameObject.SetActive(true);
-
         yield return new WaitForSeconds(waitTime);
+        canvas.transform.GetChild(7).gameObject.SetActive(false);
+    }
 
+    IEnumerator enumerator(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
         canvas.transform.GetChild(7).gameObject.SetActive(false);
     }
 
     public void monsterInteract()
     {
-        float waitTime = 5f;
+        float waitTime = 3;
         string dialogText;
 
         canvas.transform.GetChild(6).gameObject.SetActive(false);
-        if (canvas.transform.GetChild(1).gameObject.activeSelf)
+        if (canvas.transform.GetChild(1).gameObject.activeInHierarchy)
         {
+            completed = true;
 
             dialogText = "¡Fuego! ¡No, no! ¡Sácame de aquí! ¡Huiré antes de que me quemen!";
-            StartCoroutine(DialogSequence(dialogText, waitTime));
+            text.text = dialogText;
+            canvas.transform.GetChild(7).gameObject.SetActive(true);
 
 
             canvas.transform.GetChild(1).gameObject.SetActive(false);
             gameObject.GetComponent<Animator>().SetBool("run", true);
             objectsIfItNeeds[0].GetComponent<Interact>().SetFinishedQuest(true);
-            StartCoroutine("Wait");
-
-
+            StartCoroutine(Wait());
         }
-        else
+
+        if (!completed)
         {
             dialogText = "¡No me voy a mover de aquí! ¡Este es mi territorio!";
-            StartCoroutine(DialogSequence(dialogText, waitTime));
+            text.text = dialogText;
+            canvas.transform.GetChild(7).gameObject.SetActive(true);
         }
+
+        StartCoroutine(enumerator(waitTime));
     }
 
     public void oldmanInteract()
@@ -119,6 +128,7 @@ public class Interact : MonoBehaviour
         float waitTime = 5f;
         string dialogText;
 
+        Debug.Log(canvas.transform.GetChild(1).name);
         canvas.transform.GetChild(6).gameObject.SetActive(false);
         if (!finishedQuest)
         {
@@ -205,7 +215,6 @@ public class Interact : MonoBehaviour
             }
             else
             {
-
             }
         }
         else
@@ -224,10 +233,6 @@ public class Interact : MonoBehaviour
             canvas.transform.GetChild(2).gameObject.SetActive(false);
             objectsIfItNeeds[0].GetComponent<Interact>().SetFinishedQuest(true);
             Destroy(gameObject, 0.5f);
-        }
-        else
-        {
-
         }
     }
 

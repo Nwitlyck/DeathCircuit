@@ -9,7 +9,6 @@ public class gemsCount : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Debug.Log(gemCount);
         if (gemCount == 13)
         {
             lastGem.SetActive(true);
