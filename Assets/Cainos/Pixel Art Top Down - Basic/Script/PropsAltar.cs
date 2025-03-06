@@ -63,7 +63,7 @@ namespace Cainos.PixelArtTopDown_Basic
         IEnumerator LoadNextSceneAsync()
         {
             int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-            int nextSceneIndex = (currentSceneIndex == 3) ? 0 : currentSceneIndex + 1;
+            int nextSceneIndex = (currentSceneIndex == 3) ? 4 : currentSceneIndex + 1;
 
             AsyncOperation operation = SceneManager.LoadSceneAsync(nextSceneIndex);
             operation.allowSceneActivation = false;
